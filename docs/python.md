@@ -1,6 +1,0 @@
-# Python
-
-[[virtualenv]]
-
-[[django|Django]]
-

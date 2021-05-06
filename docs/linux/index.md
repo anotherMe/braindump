@@ -40,7 +40,7 @@
 - [rsync](rsync.md)
 - [scp](scp.md)
 - [screen](screen.md)
-- [ssh](ssh.md)
+- [ssh](../ssh/)
 - [tar](tar.md)
 - [tcpdump](tcpdump.md)
 - [traceroute](traceroute.md)
