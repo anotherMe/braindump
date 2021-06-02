@@ -1,5 +1,5 @@
 
-===== Enable remote access (step 1) =====
+## Enable remote access (step 1)
 
 Make daemon listen on external IP addresses, editing the //**listen_addresses**// parameter on //**postgresql.conf**// file.
 
@@ -13,7 +13,7 @@ Modifying the parameter //**listen_addresses**// to something like this, based o
 
 **NOTE**: The above address is the IP of the Postgres database server, the address __to listen on__.
 
-===== Enable remote access (step 2) =====
+## Enable remote access (step 2) 
 
 Client authentication is controlled by a configuration file, which traditionally is named **pg_hba.conf** which is usually stored in the database cluster's data directory.
 
