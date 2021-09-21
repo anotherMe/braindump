@@ -35,6 +35,7 @@
 - [netcat / nc]()
 - [nmap](nmap.md)
 - [netstat](netstat.md)
+- [rm](rm.md)
 - [rsync](rsync.md)
 - [scp](scp.md)
 - [screen](screen.md)
