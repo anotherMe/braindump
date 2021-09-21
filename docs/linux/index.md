@@ -35,8 +35,6 @@
 - [netcat / nc]()
 - [nmap](nmap.md)
 - [netstat](netstat.md)
-- [parted](parted.md)
-- [php](php.md)
 - [rsync](rsync.md)
 - [scp](scp.md)
 - [screen](screen.md)

@@ -2,7 +2,6 @@
 # Python
 
 - [virtualenv](virtualenv.md)
-- [load_testing with Locust.io](load_testing.md)
 
 ## Django
 
