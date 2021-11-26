@@ -6,3 +6,4 @@
 - [Maven cookbook](maven.md)
 
 - [Spring](spring/index.md)
+- [Testing](testing/index.md)
