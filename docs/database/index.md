@@ -32,6 +32,7 @@
 
 ## MySQL
 
+- [Locks](mysql/locks.md)
 - [Esportazione_dei_dati_su_file_di_testo](mysql/esportazione_dei_dati_su_file_di_testo.md)
 - [Backup database](mysql/backup.md)
 - [Disabilitare temporaneamente le Foreign Keys](mysql/disabilitare_temporaneamente_le_foreign_keys.md)
