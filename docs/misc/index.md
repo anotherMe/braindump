@@ -10,6 +10,7 @@
 - [Network monitoring](network_monitoring.md)
 - [Fast prototyping & mockups](prototyping_and_mockups.md)
 - [Docker](docker.md)
+- [Docker Stack](docker_stack.md)
 - [VMWare](vmware.md)
 - [Asterisk](asterisk.md)
 - [snmp](snmp.md)

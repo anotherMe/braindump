@@ -1,6 +1,6 @@
 
 
-### JPA Enhancing without persistence.xml (almost)
+### JPA Enhancing (almost) without persistence.xml
 
 Per evitare di creare e mantenere lunghissimi file `persistence.xml`, abbiamo adottato un apposito plugin di Maven, che ci consente di effettuare l'enhance delle classi entità in maniera dinamica
 
