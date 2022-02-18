@@ -7,32 +7,41 @@ Install & config instructions for a fresh, text only, Ubuntu 16 Server installat
 
 ### Main host
 
+```bash
   # apt install nagios3 nagios-nrpe-plugin
+```
 
 During installation you'll be asked for //nagiosadmin// password. 
 
 Subsequently, you can change that password by issuing:
 
+```bash
   # htpasswd /etc/nagios3/htpasswd.users nagiosadmin
-  
+```
+
 To add another user:
 
+```bash
   # htpasswd /etc/nagios3/htpasswd.users steve
-
+```
 
 ### Remote host
 
+```bash
   # apt install nagios-nrpe-server nagios-plugins
-
+```
 
 ## Add a new host with simple DNS monitoring
 
 On the Nagios server, create a configuration file for the new host:
 
+```bash
   # vi /etc/nagios3/conf.d/mytarget.cfg
+```
 
 The file should look something like this:
 
+```
 <file>
 define host{
 	use generic-host ; Name of host template to use
@@ -49,9 +58,11 @@ define service {
 	check_command check_dns!172.18.100.101
 }
 </file>
+```
 
+```bash
   # systemctl restart nagios3.service
-
+```
 
 ## Configure NRPE to check disk space on target host
 
@@ -77,8 +88,9 @@ and to add a new command:
 
 And restart NRPE service:
 
+```bash
   # /etc/init.d/nagios-nrpe-server restart
-
+```
 
 ## How to install new plugins
 
@@ -114,8 +126,10 @@ First step is adding a new contact and, possibly, add the contact to a contact g
 
 On Debian based distro we can do that by editing:
 
+```bash
   # vi /etc/nagios3/conf.d/contacts_nagios2.cfg
-  
+```
+
 Now we can link our contacts / contact groups to our hosts or services. In the example below, we are going to notify all the contacts in the //admins// group when something happens to one of our hosts. Let's modify the file **/etc/nagios3/conf.d/myhost_nagios2.cfg**:
 
 
