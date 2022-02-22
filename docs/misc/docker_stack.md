@@ -15,6 +15,17 @@ ID                  NAME              ...
 $ docker service update --force 3xrdy2c7pfm3
 ```
 
+### List running processes
+
+```bash
+docker stack ps YOUR_STACK_NAME
+```
+
+or, using a filter:
+
+```bash
+docker stack ps -f "desired-state=running" YOUR_STACK_NAME
+```
 
 ### Ottenere l'IP di un nodo
 
