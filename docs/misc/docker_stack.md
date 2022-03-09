@@ -3,13 +3,18 @@
 
 ## Cookbook
 
-### Restart one service in docker swarm stack
+### Restart specific service in docker swarm stack
+
+You'll have to retrieve the service ID first:
 
 ```bash
 $ docker stack services <stack_name>
+
 ID                  NAME              ...
 3xrdy2c7pfm3        stack-name_api    ...
 ```
+
+then you can:
 
 ```bash
 $ docker service update --force 3xrdy2c7pfm3
