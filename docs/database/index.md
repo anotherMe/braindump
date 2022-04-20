@@ -28,6 +28,7 @@
 
 - [Oggetto directory](oracle/oggetto_directory.md)
 - [SqlPlus](oracle/sqlplus.md)
+- [Running Oracle inside Docker container](oracle/oracle_xe_docker_image.md)
 
 
 ## MySQL
