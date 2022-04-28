@@ -35,11 +35,13 @@
 
 - [Locks](mysql/locks.md)
 - [Esportazione_dei_dati_su_file_di_testo](mysql/esportazione_dei_dati_su_file_di_testo.md)
-- [Backup database](mysql/backup.md)
+- [Backup database](mysql/dump.md)
+- [Restore dump](dump_restore.md)
 - [Disabilitare temporaneamente le Foreign Keys](mysql/disabilitare_temporaneamente_le_foreign_keys.md)
 - [Abilitare accesso remoto](mysql/enable_remote_access.md)
 - [Shell reference](mysql/mysql_shell_reference.md)
 - [Binary log files](mysql/mysql_binary_log.md)
+
 
 
 ## PostgreSQL

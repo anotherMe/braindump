@@ -1,7 +1,6 @@
 
-====== netstat ======
+# netstat
 
+## References
 
-== References ==
-
-[[http://www.binarytides.com/linux-netstat-command-examples/|Binary tides]]
+[Binary tides](http://www.binarytides.com/linux-netstat-command-examples/)
