@@ -1,7 +1,7 @@
 # Penetration testing
 
-[Quora - Good online resources for learning network security](https://www.quora.com/Whats-a-good-online-source-for-learning-network-security)
-[Stackexchange - Good resources to practice penetration testing](http://security.stackexchange.com/questions/48139/what-are-good-resources-to-do-hands-on-practice-on-network-penetration-testing)
+- [Quora - Good online resources for learning network security](https://www.quora.com/Whats-a-good-online-source-for-learning-network-security)
+- [Stackexchange - Good resources to practice penetration testing](http://security.stackexchange.com/questions/48139/what-are-good-resources-to-do-hands-on-practice-on-network-penetration-testing)
 
 ## Misc online resources
 
