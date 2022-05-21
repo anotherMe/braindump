@@ -1,22 +1,25 @@
 
-===== ISO/OSI vs TCP/IP =====
+# ISO/OSI vs TCP/IP
 
 
-{{::application_layer.png?400|}}
+## Router vs switch
 
+In respect to the ISO/OSI layers:
 
-===== Router vs switch =====
-
-^ Router ^ Switch ^
-| works at network layer | works at data link layer |
-| make use of IP address | make use of MAC address |
+| Router                                                        | Switch                                          |
+|---------------------------------------------------------------|-------------------------------------------------|
+| works at network layer                                        | works at data link layer                        |
+| make use of IP address                                        | make use of MAC address                         |
 | routes data between different subnets ( example: WAN to LAN ) | connects devices on the same subnet (using NAT) |
-| usually has built-in switch functionality | |
-| DHCP service | |
-| NAT | |
-| Firewall | |
+| usually has built-in switch functionality                     |                                                 |
+| DHCP service                                                  |                                                 |
+| NAT                                                           |                                                 |
+| Firewall                                                      |                                                 |
 
 
-== References ==
+
+### References
 
 [[http://www.howtogeek.com/99001/htg-explains-routers-and-switches|How-To Geek - Understanding Routers, Switches, and Network Hardware]]
+
+
