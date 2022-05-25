@@ -1,6 +1,12 @@
 
 # SQL
 
+## Miscellaneous & generic
+
+- [DBeaver](dbeaver.md)
+- [Information Schema](information_schema.md)
+
+
 ## Microsoft SQL Server
 
 - [Bulk insert](mssql/bulkinsert.md)
