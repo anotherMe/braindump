@@ -60,7 +60,7 @@ MysqlDataSource dataSource = new MysqlDataSource();
 
 dataSource.setUser("MYUSER");
 dataSource.setPassword("MYPASSWORD");
-dataSource.setUrl("jdbc:mysql://172.16.20.133:3306/dev");
+dataSource.setUrl("jdbc:mysql://HOST:PORT/DATABASE");
 
 // list of classes that need to be enhanced
 EntityManagerFactory emf = new JpaEntityManagerFactory(new Class[] {
