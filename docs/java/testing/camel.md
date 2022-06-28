@@ -1,11 +1,6 @@
 
 # Apache Camel testing
 
-In order to test Camel routes, you essentially have two strategies:
-
-- overwrite endpoints using an alternative configuration file
-- rewrite routes using AdviceWith
-
 
 ## Overwrite configuration
 
@@ -57,3 +52,27 @@ we just look up every routes ( by its *ID* ) and then manipulate the endpoints.
 
 In order to avoid that routes get started, then stopped and then started again, we annotate the test class with `@UseAdviceWith ` and
 then we manually start the routes with `context.start()`.
+
+
+## Testing single handler by mocking the exchange
+
+This one seems so simple that I still can't believe it.
+
+```java
+
+import org.apache.camel.CamelContext;
+import org.apache.camel.Exchange;
+import org.apache.camel.impl.DefaultCamelContext;
+import org.apache.camel.impl.DefaultExchange;
+
+CamelContext ctx = new DefaultCamelContext();
+Exchange ex = new DefaultExchange(ctx);
+
+String someString = "hello";
+ex.getIn().setHeader("myHeader", someString);
+
+ex.getIn().setBody(SOME_FANCY_OBJECT);
+
+MyFancyHandler fancy = new MyFancyHandler();
+fancy.elabora(ex);
+```

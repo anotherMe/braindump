@@ -4,6 +4,23 @@
 
 Below is an example of a "manual" creation of the EntityManager, useful when testing container managed EM where the container is not available or too expensive / too complex to create during tests:
 
+Pom dependencies:
+
+```xml
+<dependency>
+	<groupId>junit</groupId>
+	<artifactId>junit</artifactId>
+	<version>4.13.2</version>
+	<scope>test</scope>
+</dependency>
+<dependency>
+	<groupId>org.apache.commons</groupId>
+	<artifactId>commons-dbcp2</artifactId>
+	<version>2.9.0</version>
+	<scope>test</scope>
+</dependency>
+```
+
 ```java
 BasicDataSource dataSource = new BasicDataSource();
 
