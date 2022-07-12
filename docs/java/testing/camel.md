@@ -2,7 +2,7 @@
 # Apache Camel testing
 
 
-## Overwrite configuration
+## Overwrite configuration (Spring)
 
 Given this example `src/main/resources/application.yml`:
 
@@ -50,7 +50,7 @@ public void testingWithAdviceWith() throws Exception {
 
 we just look up every routes ( by its *ID* ) and then manipulate the endpoints.
 
-In order to avoid that routes get started, then stopped and then started again, we annotate the test class with `@UseAdviceWith ` and
+In order to avoid that routes get started, stopped and then started again, we annotate the test class with `@UseAdviceWith ` and
 then we manually start the routes with `context.start()`.
 
 
