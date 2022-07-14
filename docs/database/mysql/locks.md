@@ -7,7 +7,13 @@ If a query hangs, and it's showing in **Waiting for table metadata lock** state 
 SHOW processlist;
 ```
 
-you can try to check DB engine status:
+same as:
+
+```sql
+select * from information_schema.PROCESSLIST p ;
+```
+
+You can try to check DB engine status as well:
 
 ```sql
 show engine innodb status;
@@ -22,6 +28,7 @@ SELECT * from information_schema.INNODB_LOCKS il;
 
 SELECT * FROM information_schema.INNODB_TRX;
 ```
+
 
 # Acquiring the lock ( :P )
 
