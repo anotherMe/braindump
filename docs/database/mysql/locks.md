@@ -11,6 +11,7 @@ same as:
 
 ```sql
 select * from information_schema.PROCESSLIST p ;
+select * from information_schema.PROCESSLIST where db = 'caronte' and user = 'caronte';
 ```
 
 You can try to check DB engine status as well:

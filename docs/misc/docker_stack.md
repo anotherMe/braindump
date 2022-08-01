@@ -20,6 +20,10 @@ then you can:
 $ docker service update --force 3xrdy2c7pfm3
 ```
 
+TODO: Maybe you may just stop the container: swarm will take care of restarting.
+
+
+
 ### List running processes
 
 ```bash

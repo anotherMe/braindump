@@ -39,6 +39,7 @@
 - [rsync](rsync.md)
 - [scp](scp.md)
 - [screen](screen.md)
+- [socat](socat.md)
 - [ssh](../ssh/)
 - [tar](tar.md)
 - [tcpdump](tcpdump.md)
