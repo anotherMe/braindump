@@ -9,8 +9,6 @@
 - [LibreOffice Calc - filter by color](libreoffice_calc_filter_by_color.md)
 - [Network monitoring](network_monitoring.md)
 - [Fast prototyping & mockups](prototyping_and_mockups.md)
-- [Docker](docker.md)
-- [Docker Stack](docker_stack.md)
 - [VMWare](vmware.md)
 - [Asterisk](asterisk.md)
 - [snmp](snmp.md)
