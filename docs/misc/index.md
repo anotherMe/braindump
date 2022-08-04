@@ -14,5 +14,6 @@
 - [snmp](snmp.md)
 - [SVN](svn.md)
 - [Public Key Cryptography](public_key_cryptography.md)
+- [Apache Karaf](karaf.md)
 
 - [Angular](angular.md)

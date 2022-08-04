@@ -5,6 +5,9 @@
 
 ### Restart specific service in docker swarm stack
 
+Maybe you may just stop the container: swarm will take care of restarting ( but check the restart policy ).
+
+
 You'll have to retrieve the service ID first:
 
 ```bash
@@ -19,9 +22,6 @@ then you can:
 ```bash
 $ docker service update --force 3xrdy2c7pfm3
 ```
-
-TODO: Maybe you may just stop the container: swarm will take care of restarting.
-
 
 
 ### List running processes
