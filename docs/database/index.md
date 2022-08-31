@@ -46,7 +46,7 @@
 - [Abilitare accesso remoto](mysql/enable_remote_access.md)
 - [Shell reference](mysql/mysql_shell_reference.md)
 - [Binary log files](mysql/mysql_binary_log.md)
-
+- [Tables count](mysql/tables_count.md)
 
 
 ## PostgreSQL
