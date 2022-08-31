@@ -47,6 +47,7 @@
 - [Shell reference](mysql/mysql_shell_reference.md)
 - [Binary log files](mysql/mysql_binary_log.md)
 - [Tables count](mysql/tables_count.md)
+- [Update syntax](mysql/update.md)
 
 
 ## PostgreSQL
