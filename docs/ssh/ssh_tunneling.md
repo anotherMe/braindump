@@ -3,6 +3,7 @@
 
 ( [reference](https:chamibuddhika.wordpress.com/2012/03/21/ssh-tunnelling-explained) )
 
+
 ## Local port forwarding
 
 We have three machines:
@@ -16,7 +17,7 @@ With SSH, we can reach for **remotehost** tunneling traffic through bridge host:
 To tunnel HTTP traffic between work and remotehost, we just need to run this command ( __on work host__ ):
 
 ```bash
-# ssh myuser@bridge -L 0.0.0.0:9001:remotehost:80
+ssh -L 0.0.0.0:9001:remotehost:80 myuser@bridge
 ```
 
 In the above command, we start a new SSH instance on the work host, listening on port 9001. When connecting to that port ( ie: pointing work web browser to address http:127.0.0.1:9001 ), we are tunneling our HTTP traffic through bridge host and, eventually, to port 80 of remotehost.
@@ -33,7 +34,7 @@ Now, the other way around: from outside your corporate firewall, eg: from your h
 Execute this command from **intranet** host:
 
 ```bash
-# ssh -R 0.0.0.0:8080:localhost:80 root@example.bridge.org
+ssh -R 0.0.0.0:8080:localhost:80 root@example.bridge.org
 ```
 
 when you're back home, pointing your browser to http://example.bridge.or:8080, will give access to port 80 of your office machine
@@ -41,8 +42,8 @@ when you're back home, pointing your browser to http://example.bridge.or:8080, w
 Note that to have SSH listening on 0.0.0.0, you need to run the command as *root* and maybe set some other options in your SSH daemon configuration ( eg: /etc/ssh/sshd_config ):
 
 ```
-    PermitRootLogin yes
-    GatewayPorts yes
+PermitRootLogin yes
+GatewayPorts yes
 ```
 
 
