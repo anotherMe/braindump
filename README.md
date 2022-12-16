@@ -9,8 +9,8 @@ You'll found here sparse, incomplete bits of information. They were meant not fo
 # quick start
 
 ```bash
-$ virtualenv env
-$ env\scripts\activate
+$ virtualenv .venv
+$ .venv\scripts\activate
 $ pip install mkdocs
 $ mkdocs serve
 ```
