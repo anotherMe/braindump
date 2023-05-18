@@ -1,5 +1,5 @@
 
-# Good practeces
+# Good practices
 
 ## Always include logging
 
