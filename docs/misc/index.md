@@ -16,4 +16,9 @@
 - [Public Key Cryptography](public_key_cryptography.md)
 - [Apache Karaf](karaf.md)
 
+- [node.js](nodejs.md)
+- [npm](npm.md)
+- [bower](bower.md)
+- [Tomcat](tomcat.md)
+
 - [Angular](angular.md)

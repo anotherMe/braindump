@@ -1,8 +1,6 @@
 
 # node.js
 
-[[dev_npm|npm]]
-
 ## Installing on Debian
 
   curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -

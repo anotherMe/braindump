@@ -1,11 +1,11 @@
 
 # Tomcat
 
-Get the version:
+Get the Tomcat version:
 
 
 ```bash
-cd C:\apache-tomcat-9.0.34\lib\
+cd C:\apache-tomcat\lib\
 java -cp catalina.jar org.apache.catalina.util.ServerInfo
 ```
 

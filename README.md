@@ -12,5 +12,5 @@ You'll found here sparse, incomplete bits of information. They were meant not fo
 $ virtualenv .venv
 $ .venv\scripts\activate
 $ pip install mkdocs
-$ mkdocs serve
+$ mkdocs serve -a localhost:8001
 ```
