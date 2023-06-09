@@ -1,6 +1,17 @@
 
 # Cookbook
 
+## List the goals of a specific phase
+
+Maven provides a command to list the goals that will be executed for a specific phase.
+
+For example, to list the goals for the *package* phase:
+
+  mvn help:describe -Dcmd=package
+
+For reference, see the [Maven Help Plugin](https://maven.apache.org/plugins/maven-help-plugin/)
+
+
 ## Search and replace of strings using Velocity
 
 ( [Stackoverflow](https://stackoverflow.com/questions/2196394/full-search-and-replace-of-strings-in-source-files-when-copying-resources) )
@@ -43,9 +54,3 @@ Dove la variabile **JAVA_11_HOME** deve essere definita nel file `settings.xml` 
 
 </settings>
 ```
-
-
-## Project with modules with different JDK
-
-Set the JDK in the **runner**
-
