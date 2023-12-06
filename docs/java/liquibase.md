@@ -1,6 +1,36 @@
 
 # Liquibase
 
+## Configure the Maven plugin
+
+Example configuration, for `pom.xml`:
+
+```xml
+<plugin>
+    <groupId>org.liquibase</groupId>
+    <artifactId>liquibase-maven-plugin</artifactId>
+    <version>4.22.0</version>
+    <configuration>
+        <outputChangeLogFile>${project.basedir}/src/main/resources/config/liquibase/master.xml
+        </outputChangeLogFile>
+        <changeLogFile>/config/liquibase/master.xml</changeLogFile>
+        <diffChangeLogFile>
+            ${project.basedir}/src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml
+        </diffChangeLogFile>
+        <driver>org.postgresql.Driver</driver>
+        <url>jdbc:postgresql://localhost:5432/my_database</url>
+        <defaultSchemaName>my_schema</defaultSchemaName>
+        <username>my_user_name</username>
+        <password>my_password</password>
+        <verbose>true</verbose>
+        <logging>debug</logging>
+        <contexts>!test</contexts>
+    </configuration>
+    <dependencies>
+    </dependencies>
+</plugin>
+```
+
 ## Runnning the Maven plugin
 
 Create a new Maven run configuration for the **liquibase** plugin: 
@@ -30,34 +60,6 @@ mvn compile liquibase:changelogSync -pl <MODULE_NAME> -f pom.xml
 
 ( Note that you have to `compile` before you run the plugin )
 
-
-Cloearly, to run the above commands, you need to have the Liquibase plugin configured in your `pom.xml`. For example:
-
-```xml
-<plugin>
-                <groupId>org.liquibase</groupId>
-                <artifactId>liquibase-maven-plugin</artifactId>
-                <version>4.22.0</version>
-                <configuration>
-                    <outputChangeLogFile>${project.basedir}/src/main/resources/config/liquibase/master.xml
-                    </outputChangeLogFile>
-                    <changeLogFile>/config/liquibase/master.xml</changeLogFile>
-                    <diffChangeLogFile>
-                        ${project.basedir}/src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml
-                    </diffChangeLogFile>
-                    <driver>org.postgresql.Driver</driver>
-                    <url>jdbc:postgresql://localhost:5432/my_database</url>
-                    <defaultSchemaName>my_schema</defaultSchemaName>
-                    <username>my_user_name</username>
-                    <password>my_password</password>
-                    <verbose>true</verbose>
-                    <logging>debug</logging>
-                    <contexts>!test</contexts>
-                </configuration>
-                <dependencies>
-                </dependencies>
-            </plugin>
-```
 
 ### References
 

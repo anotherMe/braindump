@@ -8,6 +8,7 @@
 - [Icinga2](icinga2.md)
 - [LibreOffice Calc - filter by color](libreoffice_calc_filter_by_color.md)
 - [Network monitoring](network_monitoring.md)
+- [OpenSearch](opensearch.md)
 - [Fast prototyping & mockups](prototyping_and_mockups.md)
 - [VMWare](vmware.md)
 - [Asterisk](asterisk.md)
