@@ -83,3 +83,15 @@ Dove la variabile **JAVA_11_HOME** deve essere definita nel file `settings.xml` 
 
 </settings>
 ```
+
+## Show dependency tree
+
+```java
+mvn dependency:tree -Dverbose
+```
+
+You may want to filter results, for example using "org.springdoc":
+
+```java
+mvn dependency:tree -Dverbose -Dincludes=org.springdoc
+```
