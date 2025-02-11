@@ -6,6 +6,7 @@ You'll found here sparse, incomplete bits of information. They were meant not fo
 
 
 - [Docker](docker/index.md)
+- [Kubernetes](kubernetes/index.md)
 - [linux](linux/index.md)
 - [database](database/index.md)
 - [misc](misc/index.md)
