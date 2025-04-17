@@ -11,6 +11,7 @@ You'll found here sparse, incomplete bits of information. They were meant not fo
 - [database](database/index.md)
 - [misc](misc/index.md)
 - [windows](windows/index.md)
+- [MacOS](macos/index.md)
 - [python](python/index.md)
 - [reti](reti/index.md)
 - [dev](dev/index.md)
