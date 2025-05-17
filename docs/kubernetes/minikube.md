@@ -1,17 +1,7 @@
 
-After a (rather superficial) research on pros and cons of different Kubernetes development environments:
-
-- [Minikube](https://minikube.sigs.k8s.io/docs/) quickly sets up a local Kubernetes cluster on macOS, Linux, and Windows.
-- [k3d](https://k3d.io/stable/) is a lightweight wrapper to run k3s (Rancher Lab’s minimal Kubernetes distribution) in docker.
-- [kind](https://kind.sigs.k8s.io/) is a tool for running local Kubernetes clusters using Docker container “nodes”.
-- [Getdeck](https://getdeck.dev/) - Instant virtual ephemeral development and testing clusters
-
-mostly based on [this article](https://www.blueshoe.io/blog/minikube-vs-k3d-vs-kind-vs-getdeck-beiboot/), I opted for **Minikube**.
-
-
 ## Minikube quick start
 
-Start a cluster by running:
+After installing minikube ( see [this page](https://minikube.sigs.k8s.io/docs/start) ), you can start a cluster by running:
 
 ```sh
 minikube start
